@@ -6,9 +6,10 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { configureStore } from "./app/store/configureStore";
+import ScrollToTop from './app/common/util/ScrollTotop';
 
 const store = configureStore();
-console.log(store.getState());
+
 const rootEl = document.getElementById("root");
 
 let render = () => {
@@ -16,7 +17,9 @@ let render = () => {
     <React.StrictMode>
       <Provider store={store}>
         <BrowserRouter>
-          <App />
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </BrowserRouter>
       </Provider>
     </React.StrictMode>,
