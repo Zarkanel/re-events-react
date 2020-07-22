@@ -7,7 +7,7 @@ import { HomePage } from "../../features/home/HomePage";
 import EventDetailedPage from "../../features/event/EventDetailed/EventDetailedPage";
 import { PeopleDashboard } from "../../features/user/PeopleDashboard/PeopleDashboard";
 import { UserDetailedPage } from "../../features/user/UserDetailed/UserDetailedPage";
-import { SettingsDashboard } from "../../features/user/Settings/SettingsDashboard";
+import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 import EventForm from "../../features/event/EventForm/EventForm";
 import TestComponent from "../../features/testArea/TestComponent";
 import ModalManager from "../../features/modals/ModalManager";
